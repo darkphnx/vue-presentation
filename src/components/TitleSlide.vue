@@ -6,6 +6,7 @@
     <div class='subTitle'>
       <h3>{{ subTitle }}</h3>
     </div>
+    <slot></slot>
   </Slide>
 </template>
 

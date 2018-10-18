@@ -1,6 +1,7 @@
 <template>
-  <TitleSlide title="An Introduction to Vue.js"
-              subTitle="React Killer or Overhyped?">
+  <TitleSlide title="A Window with a Vue"
+              subTitle="Vue.js - React killer or just the flavour of the week?">
+    <div class='vueLogoContainer'><img src='../assets/vue.png'></div>
   </TitleSlide>
 </template>
 
@@ -14,3 +15,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .vueLogoContainer {
+    margin: 0 auto;
+  }
+</style>

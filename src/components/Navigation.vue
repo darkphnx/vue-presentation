@@ -1,8 +1,6 @@
 <template>
   <div id="navigation">
-    <a href="#" @click.prevent="prevClicked">&larr;</a>
-    {{ currentSlide }} of {{ slideCount }}
-    <a href="#" @click.prevent="nextClicked">&rarr;</a>
+    Slide {{ currentSlide }} / {{ slideCount }}
   </div>
 </template>
 
@@ -27,8 +25,10 @@ export default {
 <style>
   #navigation {
     position: absolute;
-    bottom: 0;
+    top: 30px;
     right: 0;
-    margin: 0 15px 10px;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 16px;
   }
 </style>
