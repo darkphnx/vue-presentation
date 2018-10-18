@@ -1,5 +1,6 @@
 <template>
   <div class="slide" :style="slideStyle">
+    <img src='../assets/atech.svg' id='atechLogo' />
     <slot></slot>
   </div>
 </template>
@@ -24,5 +25,12 @@ export default {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  #atechLogo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 50px;
   }
 </style>
