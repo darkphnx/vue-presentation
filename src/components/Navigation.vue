@@ -25,7 +25,7 @@ export default {
 <style>
   #navigation {
     position: absolute;
-    top: 30px;
+    top: 45px;
     right: 0;
     margin: 0 15px;
     color: #fff;

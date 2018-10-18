@@ -30,6 +30,6 @@ export default {
   }
 
   .header, .content {
-    padding-left: 5rem;
+    padding: 1rem 5rem;
   }
 </style>

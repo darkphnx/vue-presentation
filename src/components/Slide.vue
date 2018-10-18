@@ -29,7 +29,7 @@ export default {
 
   #atechLogo {
     position: absolute;
-    top: 15px;
+    top: 30px;
     left: 15px;
     height: 50px;
   }
