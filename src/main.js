@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import App from './App.vue'
+import SlideShow from './SlideShow.vue'
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App)
+  render: h => h(SlideShow)
 }).$mount('#app')
