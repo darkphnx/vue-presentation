@@ -36,4 +36,8 @@ export default {
   .title h1 {
     margin-top: auto;
   }
+
+  .title, .subTitle {
+    text-align: center;
+  }
 </style>

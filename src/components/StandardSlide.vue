@@ -28,4 +28,8 @@ export default {
     background-color: #017dc6;
     color: #fff;
   }
+
+  .header, .content {
+    padding-left: 5rem;
+  }
 </style>
