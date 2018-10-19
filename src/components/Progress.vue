@@ -32,5 +32,6 @@ export default {
 .progressInner {
   background-color: #fff;
   height: 100%;
+  transition: width 0.1s;
 }
 </style>

@@ -24,7 +24,7 @@ export default {
 
 <style>
 .header {
-  height: 60px;
+  height: 150px;
   padding: 0px 40px;
   background-color: #017dc6;
   color: #fff;
@@ -34,9 +34,9 @@ export default {
 }
 .header h1 {
   flex: 1 0 auto;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .header img {
-  height: 66%
+  height: 64px;
 }
 </style>

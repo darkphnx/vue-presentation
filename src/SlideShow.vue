@@ -15,9 +15,16 @@
 import Header from './components/Header.vue'
 
 import Title from './slides/Title.vue'
-import VsReact from './slides/VsReact.vue'
+import What from './slides/What.vue'
+import Why from './slides/Why.vue'
+import ComponentDemo from './slides/ComponentDemo.vue'
+import ComputedProperties from './slides/ComputedProperties.vue'
+import TagsDemo from './slides/TagsDemo.vue'
+import TagsDemo2 from './slides/TagsDemo2.vue'
+import Drawbacks from './slides/Drawbacks.vue'
+import GettingStarted from './slides/GettingStarted.vue'
 
-const slides = [Title, VsReact];
+const slides = [Title, What, Why, ComponentDemo, ComputedProperties, TagsDemo, TagsDemo2, Drawbacks, GettingStarted];
 
 export default {
   name: 'slideshow',
@@ -77,16 +84,31 @@ export default {
 <style>
 #slideshow {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-size: 48px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   height: 100%;
   margin: 0;
+  line-height: 1.5;
 
   display: flex;
   flex-direction: column;
 }
+
 .slideContainer {
   flex: 1 0 auto;
+}
+
+li {
+  margin-top: 0.5em;
+}
+
+li:first-child {
+  margin-top: 0;
+}
+
+ul > li:first-child {
+  margin-top: 0.5em;
 }
 </style>

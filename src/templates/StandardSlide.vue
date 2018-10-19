@@ -15,6 +15,7 @@ export default {
 
 <style>
   .content {
-    padding: 1rem 5rem;
+    padding: 0px 60px;
+    height: 100%;
   }
 </style>
