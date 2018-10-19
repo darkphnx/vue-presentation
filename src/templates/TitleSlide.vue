@@ -1,5 +1,5 @@
 <template>
-  <Slide>
+  <div class='titleContainer'>
     <div class='title'>
       <h1>{{ title }}</h1>
     </div>
@@ -7,11 +7,10 @@
       <h3>{{ subTitle }}</h3>
     </div>
     <slot></slot>
-  </Slide>
+  </div>
 </template>
 
 <script>
-import Slide from "./Slide.vue"
 
 export default {
   name: "TitleSlide",
@@ -19,15 +18,18 @@ export default {
     title: String,
     subTitle: String
   },
-  components: {
-    Slide
-  }
 }
 </script>
 
 <style>
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   .title {
-    height: 50%;
+    height: 33%;
     background-color: #017dc6;
     color: #fff;
     display: flex;

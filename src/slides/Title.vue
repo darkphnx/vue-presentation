@@ -6,10 +6,12 @@
 </template>
 
 <script>
-import TitleSlide from '../components/TitleSlide.vue'
+import Slide from '../mixins/Slide.js'
+import TitleSlide from '../templates/TitleSlide.vue'
 
 export default {
   name: "Title",
+  mixins: [Slide],
   components: {
     TitleSlide
   }

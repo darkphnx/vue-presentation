@@ -5,10 +5,17 @@
 </template>
 
 <script>
-import StandardSlide from '../components/StandardSlide.vue'
+import Slide from '../mixins/Slide.js'
+import StandardSlide from '../templates/StandardSlide.vue'
 
 export default {
   name: 'VsReact',
+  mixins: [Slide],
+  data: function(){
+    return {
+      title: "Vue vs. React"
+    };
+  },
   components: {
     StandardSlide
   }

@@ -1,17 +1,18 @@
 <template>
   <div id="slideshow">
-    <component :is="currentSlide"></component>
-    <Navigation
+    <Header
+      :title="currentSlideTitle"
       :currentSlide="currentSlideNumber"
-      :slideCount="slideCount"
-      @nextSlide="nextSlide"
-      @prevSlide="prevSlide">
-    </Navigation>
+      :slideCount="slideCount">
+    </Header>
+    <div class='slideContainer'>
+      <component :is="currentSlide" @changeTitle="changeTitle"></component>
+    </div>
   </div>
 </template>
 
 <script>
-import Navigation from './components/Navigation.vue'
+import Header from './components/Header.vue'
 
 import Title from './slides/Title.vue'
 import VsReact from './slides/VsReact.vue'
@@ -23,7 +24,8 @@ export default {
   data: function() {
     return {
       slides: slides,
-      currentSlideIndex: 0
+      currentSlideIndex: 0,
+      currentSlideTitle: ""
     }
   },
   created: function(){
@@ -41,6 +43,9 @@ export default {
     }
   },
   methods: {
+    changeTitle: function(newTitle){
+      this.currentSlideTitle = newTitle
+    },
     nextSlide: function(){
       const nextSlideIndex = this.currentSlideIndex + 1;
 
@@ -64,7 +69,7 @@ export default {
     }
   },
   components: {
-    Navigation
+    Header
   }
 }
 </script>
@@ -77,5 +82,11 @@ export default {
   color: #2c3e50;
   height: 100%;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+.slideContainer {
+  flex: 1 0 auto;
 }
 </style>
