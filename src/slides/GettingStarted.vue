@@ -6,9 +6,9 @@
         <li>vue-cli bootstraps a frontend-only project</li>
         <li>When using Rails with Yarn simply 'yarn add vue'</li>
         <li>Easy to add to an existing application</li>
-        <li>Look at the source for <a href='https://github.com/darkphnx/vue-presentation'>this presentation</a>
+        <li>Look at the source for this presentation (<a href='https://github.com/darkphnx/vue-presentation'>https://github.com/darkphnx/vue-presentation</a>)
         <li>
-          Check out the source for <a href='https://github.com/darkphnx/vue-rails-todo'>vue-rails-todo</a> for an
+          Check out the source for vue-rails-todo (<a href='https://github.com/darkphnx/vue-rails-todo'>https://github.com/darkphnx/vue-rails-todo</a>) for an
           example with a Rails backend
         </li>
       </ul>
