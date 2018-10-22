@@ -4,5 +4,7 @@ import SlideShow from './SlideShow.vue'
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(SlideShow)
-}).$mount('#app')
+  render: function(createElement) {
+    return createElement(SlideShow);
+  }
+}).$mount('#app');

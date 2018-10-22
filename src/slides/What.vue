@@ -1,7 +1,10 @@
 <template>
   <StandardSlide>
     <div class='what-container'>
-      <img src='../assets/vue.png'>
+      <div class='icons'>
+        <img src='../assets/vue.svg'>
+        <img src='../assets/react.svg'>
+      </div>
       <ul>
         <li>Frontend Javascript Framework</li>
         <li>
@@ -43,8 +46,15 @@ export default {
     height: 100%;
   }
 
-  .what-container img {
-    margin-right: 40px;
-    min-width: 16%;
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 100%;
+  }
+
+  .icons img {
+    width: 100%;
   }
 </style>
