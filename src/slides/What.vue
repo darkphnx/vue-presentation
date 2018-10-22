@@ -51,10 +51,11 @@ export default {
     flex-direction: column;
     justify-content: space-evenly;
     width: 200px;
-    height: 100%;
+    margin-right: 40px;
   }
 
   .icons img {
     width: 100%;
+    margin-bottom: 20px;
   }
 </style>

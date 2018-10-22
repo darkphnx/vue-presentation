@@ -29,7 +29,6 @@ export default {
   }
 
   .title {
-    height: 33%;
     background-color: #017dc6;
     color: #fff;
     display: flex;

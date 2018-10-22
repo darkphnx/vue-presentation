@@ -100,8 +100,25 @@ export default {
   flex: 1 0 auto;
 }
 
+ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
 li {
   margin-top: 0.5em;
+}
+
+li:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/vue.svg');
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  background-position: bottom;
+  margin-right:0.2em;
 }
 
 li:first-child {

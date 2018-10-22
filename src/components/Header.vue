@@ -31,9 +31,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 0 0 auto;
 }
 .header h1 {
-  flex: 1 0 auto;
   margin-left: 40px;
 }
 .header img {
