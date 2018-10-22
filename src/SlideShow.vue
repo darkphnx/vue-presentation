@@ -1,5 +1,5 @@
 <template>
-  <div id="slideshow">
+  <div id="slideshow" @click.prevent="nextSlide">
     <Header
       :title="currentSlideTitle"
       :currentSlide="currentSlideNumber"
