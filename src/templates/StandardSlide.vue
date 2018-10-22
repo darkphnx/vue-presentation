@@ -17,5 +17,6 @@ export default {
   .content {
     padding: 0px 60px;
     height: 100%;
+    margin: auto 0;
   }
 </style>

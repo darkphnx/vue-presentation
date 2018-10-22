@@ -98,6 +98,7 @@ export default {
 
 .slideContainer {
   flex: 1 0 auto;
+  display: flex;
 }
 
 ul {

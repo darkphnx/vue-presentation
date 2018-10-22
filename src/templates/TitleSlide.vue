@@ -25,7 +25,7 @@ export default {
   .titleContainer {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex: 1 0 auto;
   }
 
   .title {
@@ -33,6 +33,7 @@ export default {
     color: #fff;
     display: flex;
     flex-direction: column;
+    flex-basis: 40%;
   }
 
   .title h1 {
